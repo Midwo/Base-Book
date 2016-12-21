@@ -13,5 +13,15 @@ namespace base_book
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DetailsView1.PageIndex = GridView1.SelectedIndex;
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DetailsView1.PageIndex = DropDownList1.SelectedIndex;
+        }
     }
 }
